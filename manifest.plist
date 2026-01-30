@@ -17,9 +17,9 @@
             <key>metadata</key>
             <dict>
                 <key>bundle-identifier</key>
-                <string>com.burbn.instagram66</string>
+                <string>com.burbn.instagram34</string>
                 <key>bundle-version</key>
-                <string>412.0.0</string>
+                <string>859471633</string>
                 <key>kind</key>
                 <string>software</string>
                 <key>title</key>
@@ -29,5 +29,6 @@
     </array>
 </dict>
 </plist>
+
 
 
