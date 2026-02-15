@@ -4,22 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="تثبيت سينمانا على الآيفون، تنزيل سينمانا للآيفون، رابط تحميل سينمانا لأجهزة iOS، تجربة سينمانا على جهازك، كيف تقوم بتثبيت سينمانا، تطبيق سينمانا: تحميل وتثبيت، خطوات تنزيل سينمانا على الآيفون، اكتشف سينمانا: رابط التنزيل للأيفون.">
-    <title>تثبيت سينمانا</title>
+    <meta name="description" content="تثبيت instgramregram  على الآيفون، تنزيل instgramregram  للآيفون، رابط تحميل instgramregram لأجهزة iOS، تجربة instgramregram  على جهازك، كيف تقوم بتثبيت instgramregram ، تطبيقinstgramregram : تحميل وتثبيت، خطوات تنزيل instgramregram  على الآيفون، اكتشف instgramregram : رابط التنزيل للأيفون.">
+    <title>تثبيت Regram </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
     <style>
          :root {
             --dark-background: #000;
             --card-bg-opacity: rgba(255, 255, 255, 0.00);
-            /* شفافية كاملة لبطاقة التطبيق */
             --card-border-color: rgba(255, 255, 255, 0.1);
             --text-color-light: #F0F0F0;
             --button-background-color: #0d80f9;
             --button-text-color: #FFFFFF;
             --button-hover-background: #0a66c2;
-            --glow-gradient-start: rgba(83, 176, 249, 0.4);
-            --glow-gradient-end: rgba(210, 40, 255, 0.4);
+            --gradient-start: #53b0f9;
+            --gradient-end: #d228ff;
             --card-border-radius: 25px;
             --icon-border-radius: 20px;
             --appmaster-bg: rgba(255, 255, 255, 0.08);
@@ -42,6 +41,7 @@
             overflow-x: hidden;
             -webkit-overflow-scrolling: touch;
             position: relative;
+            /* أُضف لضمان عمل العناصر ذات الـ position: absolute/fixed بشكل صحيح */
         }
         
         .main-card {
@@ -59,29 +59,42 @@
             flex-direction: column;
             align-items: center;
             position: relative;
+            /* مهم جداً لتحديد موضع background-glow-circle داخله */
             box-sizing: border-box;
             margin-bottom: 40px;
             overflow: hidden;
+            /* لإخفاء أي جزء من الهالة يخرج عن حدود البطاقة */
         }
         
         .background-glow-circle {
             width: 250px;
+            /* حجم أكبر للهالة */
             height: 250px;
-            background: linear-gradient(45deg, rgba(238, 119, 82, 0.6), rgba(231, 60, 126, 0.6), rgba(35, 166, 213, 0.6), rgba(35, 213, 171, 0.6));
+            /* حجم أكبر للهالة */
+            /* استخدام الألوان والتدرج من كود الـ morphing-bg مع شفافية معززة */
+            background: linear-gradient(45deg, rgba(238, 119, 82, 0.8), rgba(231, 60, 126, 0.8), rgba(35, 166, 213, 0.8), rgba(35, 213, 171, 0.8));
             background-size: 400% 400%;
+            /* للحركة */
             border-radius: 50%;
-            /* تم تقليل قيمة الضبابية بشكل أكبر لزيادة الوضوح */
-            filter: blur(20px);
-            /* كانت 40px */
-            opacity: 0.9;
+            /* لجعلها دائرة بشكل افتراضي */
+            /* تقليل قيمة الضبابية لزيادة الوضوح */
+            filter: blur(15px);
+            /* كانت 20px في آخر تعديل على سينمانا، لنزيد الوضوح أكثر */
+            /* زيادة الشفافية الكلية لجعل الألوان أقوى */
+            opacity: 1;
+            /* كانت 0.9، الآن 1 لزيادة الوضوح إلى أقصى حد ممكن */
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%) scale(1);
+            /* لضبط الموضع الأولي والقياس */
             z-index: -1;
+            /* لتبقى خلف المحتوى داخل البطاقة */
             pointer-events: none;
+            /* إضافة حركات التدرج والشكل */
             animation: gradient-anim 8s ease infinite, morph-shape 5s ease infinite;
         }
+        /* كي فريم لحركة التدرج اللوني */
         
         @keyframes gradient-anim {
             0% {
@@ -94,6 +107,7 @@
                 background-position: 0% 50%;
             }
         }
+        /* كي فريم لتغير الشكل والحجم، مع قيم مناسبة للهالة */
         
         @keyframes morph-shape {
             0% {
@@ -363,15 +377,15 @@
         <div class="background-glow-circle"></div>
 
         <div class="card-header">
-            <img src="https://getcinemana.netlify.app/images/313210a4661a565b62de6.jpg" alt="شعار تطبيق cinemana" class="app-icon">
+            <img src="Regramphot.png" alt="شعار تطبيق vood cinema" class="app-icon">
             <div class="app-info-header">
-                <h1>cinemana</h1>
+                <h1>Regram</h1>
             </div>
         </div>
 
         <div class="card-content">
             <p class="original-description">
-                تجربة مشاهدة لا مثيل لها بين يديك. حمّل الآن واستمتع بمكتبة ضخمة من المحتوى الترفيهي
+                النسخة الجبارة من Regram ، قم بتحميل التطبيق وتمتع بمميزات لا حصر لها
             </p>
         </div>
 
@@ -381,9 +395,9 @@
     </div>
 
     <div class="text-section">
-        <h2>حمّل تطبيق سينمانا</h2>
+        <h2>حمّل تطبيق Regram </h2>
         <p class="warning-text">
-            تطبيق سينمانا هذا لمستخدمين نظام iOS فقط ، علمًا إن التطبيق موقع بشهادة مؤقتة وسيتوقف عند إنتهاء هذه الشهادة
+            تطبيق Regram هذا لمستخدمين نظام iOS فقط ، علمًا إن التطبيق موقع بشهادة مؤقتة وسيتوقف عند إنتهاء هذه الشهادة
         </p>
     </div>
 
@@ -422,16 +436,20 @@
         </svg>
         <span class="text_button">تثبيت التطبيق</span>
     </button>
-
     <script>
         document.getElementById('installBtn').addEventListener('click', function(e) {
-            e.preventDefault();
+            e.preventDefault(); // يمنع السلوك الافتراضي للرابط (التنقل مباشرة)
 
+            // **** هذا هو المكان الذي تم فيه وضع الرابط الذي طلبته ****
             const plistLink = 'itms-services://?action=download-manifest&url=https://appmaster-regram.netlify.app/manifest.plist';
+
+            // رابط قناة التليجرام التي يتم التحويل إليها بعد محاولة التثبيت
             const telegramLink = 'https://t.me/Appmasster';
 
+            // يبدأ محاولة تثبيت التطبيق
             window.location.href = plistLink;
 
+            // بعد 1.5 ثانية (1500 مللي ثانية)، يتم التحويل إلى رابط التليجرام
             setTimeout(function() {
                 window.location.href = telegramLink;
             }, 1500);
@@ -440,5 +458,3 @@
 </body>
 
 </html>
-
-
